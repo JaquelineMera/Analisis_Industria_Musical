@@ -17,6 +17,7 @@ Este proyecto tiene como objetivo confirmar o refutar hipótesis para identifica
 - [Conclusiones](#conclusiones)
 - [Recomendaciones](#recomendaciones)
 - [Pasos a seguir](#pasos-a-seguir)
+- [Enlaces](#enlaces)
 
 ## Introducción
 En el competitivo mundo de la industria musical, la capacidad de tomar decisiones basadas en datos se ha convertido en un activo invaluable. En este contexto, una discográfica se enfrenta al emocionante desafío de lanzar un nuevo artista en el escenario musical global, y cuenta con una poderosa herramienta: un extenso dataset de Spotify con información sobre las canciones más escuchadas en 2023.
@@ -105,15 +106,25 @@ La validación de hipótesis se llevó a cabo en BigQuery y Google Colab
     + *Regresión lineal simple*: Relación fuerte y significativa entre el número de veces que una canción aparece en playlists de Deezer y Spotify. Un R² de 0.7284 indica que el 72.84% de la variabilidad en "In Spotify Playlist" puede explicarse por "In Deezer Playlist“, mientras que un R² de 0.6758 indica que el 67.58% de la variabilidad en "In Spotify Playlist" puede explicarse por "In Apple Playlist“. 
 
 ## Conclusiones
+El éxito de una canción y/o artista depende de:
 + **Factores de Distribución y Promoción**: La popularidad de una canción en términos de streams se debe, a factores de distribución y promoción, como su inclusión en playlists y rankings, así como la presencia en múltiples plataformas.
 + **Consistencia entre Plataformas**: Hay una tendencia moderada a fuerte en la popularidad de canciones entre diferentes plataformas de streaming, aunque no sea una relación perfecta.
 + **Cantidad de Contenido**: El número total de canciones de un artista está fuertemente relacionado con su éxito en streams, sugiriendo que más contenido puede atraer más streams.
 
 ## Recomendaciones
-+ **Factores de Distribución y Promoción**: Incluir los lanzamientos en al menos 5 mil playlists y estar presente en las múltiples plataformas de streaming en el siguiente orden: Spotify, Deezer y Apple.
+A partir de las conclusiones se sugiere:
++ **Distribución y Promoción**: Incluir los lanzamientos en al menos 5 mil playlists y estar presente en las múltiples plataformas de streaming en el siguiente orden: Spotify, Deezer y Apple.
 + **Cantidad de Contenido**: Considerar al menos 3 lanzamientos por artista nuevo. Se recomiendan los meses de mayo (inicio de verano) y enero (inicio de año), en los primeros 5 días del mes.
-+ **Características de la canción**: BPM 110 a 160, con un promedio de 120. Danceability del 60% al 65% y Speechiness del 5% al 10%. Los géneros recomendados son Pop, Hip Hop, Electrónica y Música Latina.
++ **Tomar en cuenta características de la canción**: Aunque la relación del éxito y las características musicales es muy baja, se recomiendan los valores de los segmentos con más éxito, por tanto se recomienda el lanzamiento de canciones con un BPM de 110 a 160, con un promedio de 120. Con Danceability del 60% al 65% y Speechiness del 5% al 10%. Los géneros recomendados de acuerdo al análisis de la data son Pop, Hip Hop, Electrónica y Música Latina.
 
 ## Pasos a seguir
+Como pasos a seguir se sugieren los siguientes análisis:
 + Análisis por género musical.
-+ Análisis de canciones como contenido de audio en redes sociales (Tik Tok, Instagram y Facebook). 
++ Análisis de canciones como contenido de audio en redes sociales (Tik Tok, Instagram y Facebook).
++ Evaluar otras métricas clave como likes y shares y su influencia en el número de streams. 
++ Medir el impacto de colaboraciones (feat.) en el éxito de canciones y artistas. 
+
+## Enlaces
+### Presentación 
+### Dashboard
+### Video Loom

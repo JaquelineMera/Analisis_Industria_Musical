@@ -1,6 +1,6 @@
 # p2_validacion_hipotesis_spotify
 
-# Laboratoria
+# Laboratoria: Validación de Hipótesis
 Este proyecto tiene como objetivo confirmar o refutar hipótesis para identificar los factores que pueden llevar al éxito a un artista o a una canción. Mediante el análisis de datos y el uso de pruebas estadísticas, se pretende comprender las variables que influyen en el desempeño en plataformas de streaming y otros indicadores de popularidad musical.
 
 ![Caratula](caratula_spotify.jpeg)

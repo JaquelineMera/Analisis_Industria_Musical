@@ -58,13 +58,37 @@ El procesamiento de los datos, se llevó a cabo en BigQuery a partir de comandos
 + Visualizar las variables categóricas a través de gráficos de barras y líneas 
 + Aplicar medidas de tendencia central en BPM, Playlists y Streams
 + Aplicar medidas de dispersión BPM, Playlists y Streams
-+ Visualizar distribución a través de Hitogramas
++ Visualizar distribución a través de Hitogramas BPM, Playlists y Streams
+  
 ## Validación de hipótesis
-Se plantearon las siguientes hipótesis...
+La validación de hipótesis se llevó a cabo en BigQuery y Google Colab
++ Análisis de correlación entre métricas (Coeficiente de Pearson)
++ Test estadísticos Test T y Test Mann–Whitney U (Wilcoxon)
+  + Calcular cuartiles en características técnicas
+  + Segmentación de características técnicas en grupos "alto" y "bajo"
+  + Visualizar distribución de las características técnicas (histogramas y gráficos de densidad)
+  + Aplicación de Test estadísticos a partir de la distribución
+    +  Se aplico el Test Mann–Whitney U (Wilcoxon), los datos no siguen una distribución normal
++ Regresión Lineal Simple
+  + Error Cuadrático Medio (MSE)
+  + Coeficiente de Determinación (R²)
+  + Precisión del modelo
 
 ## Resultados
-Los resultados obtenidos...
-
+### Validación de hipótesis
+  + H1: Las canciones con un mayor BPM (Beats Por Minuto) tienen más éxito en términos de cantidad de streams en Spotify.
+    + **Conclusión**: No hay relación lineal significativa entre los BPM de una canción y su popularidad  en términos de streams.
+      + *Coeficiente de Pearson* (-0.0023): Hay una correlación negativa extremadamente débil (casi nula).
+      + *Test Mann-Whitney U - Valor P* (0.4395): No hay una diferencia significativa entre las categorías 'alto' y 'bajo‘.
+      + *Regresión lineal simple*: Modelo Inadecuado, no hay una relación lineal significativa entre BPM y Streams; Coeficiente de determinación R² (-0.0013).
+  + H2: Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer.
+    + **Conclusión**: Las canciones que son populares en los ranking de Spotify también tienden a ser populares en otras plataformas como Deezer, Apple y Shazam. Sin embargo, el modelo de regresión lineal no puede usarse como modelo predictivo pues solo explica el 30% de esta variabilidad en Deezer y el 14% en Apple y Shazam.
+      +  *Coeficiente de Pearson* (Dezzer 0.6051; Apple 0.5518; Shazam 0.6056): Existe una correlación positiva moderada entre el ranking de las canciones en Spotify y otras plataformas.
+      +  *Regresión lineal simple*: Relación moderada entre la presencia en los charts de Spotify y otras plataformas. Sin embargo, un R² 0.303 indica en Deezer que el 30.3% de la variabilidad en "In Spotify Charts" puede explicarse por "In Deezer Charts“. Para Apple el R² es de 0.1403 y para Shazam de 0.1407
+  + H3: La presencia de una canción en un mayor número de playlists se relaciona con un mayor número de streams.
+  + H4: Los artistas con un mayor número de canciones en Spotify tienen más streams.
+  + H5: Las características de la música influyen en el éxito en términos de cantidad de streams en Spotify.
+  + H6: Las canciones con más apariciones en playlist de Spotify tienen un comportamiento similar en otras plataformas como Deezer o Apple.
 ## Conclusiones
 A partir de los resultados, se pueden extraer las siguientes conclusiones...
 

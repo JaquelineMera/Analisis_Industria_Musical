@@ -80,34 +80,34 @@ La validación de hipótesis se llevó a cabo en BigQuery y Google Colab
 
 ## Resultados
 ### Validación de hipótesis
-  + H1: Las canciones con un mayor BPM (Beats Por Minuto) tienen más éxito en términos de cantidad de streams en Spotify.
+  + **H1**: Las canciones con un mayor BPM (Beats Por Minuto) tienen más éxito en términos de cantidad de streams en Spotify.
     + **Conclusión**: No hay relación lineal significativa entre los BPM de una canción y su popularidad  en términos de streams.
       + *Coeficiente de Pearson* (-0.0023): Hay una correlación negativa extremadamente débil (casi nula).
       + *Test Mann-Whitney U - Valor P* (0.4395): No hay una diferencia significativa entre las categorías 'alto' y 'bajo‘.
       + *Regresión lineal simple*: Modelo Inadecuado, no hay una relación lineal significativa entre BPM y Streams; Coeficiente de determinación R² (-0.0013).
 ![Hipótesis 1](/images/Diapositiva1.PNG)
-  + H2: Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer.
+  + **H2**: Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer.
     + **Conclusión**: Las canciones que son populares en los ranking de Spotify también tienden a ser populares en otras plataformas como Deezer, Apple y Shazam. Sin embargo, el modelo de regresión lineal no puede usarse como modelo predictivo pues solo explica el 30% de esta variabilidad en Deezer y el 14% en Apple y Shazam.
       +  *Coeficiente de Pearson* (Dezzer 0.6051; Apple 0.5518; Shazam 0.6056): Existe una correlación positiva moderada entre el ranking de las canciones en Spotify y otras plataformas.
       +  *Regresión lineal simple*: Relación moderada entre la presencia en los charts de Spotify y otras plataformas. Sin embargo, un R² 0.303 indica en Deezer que el 30.3% de la variabilidad en "In Spotify Charts" puede explicarse por "In Deezer Charts“. Para Apple el R² es de 0.1403 y para Shazam de 0.1407
 ![Hipótesis 2](/images/Diapositiva2.PNG)
-  + H3: La presencia de una canción en un mayor número de playlists se relaciona con un mayor número de streams.
+  + **H3**: La presencia de una canción en un mayor número de playlists se relaciona con un mayor número de streams.
     + **Conclusión**: La inclusión en playlists es un factor importante que impulsa el número de streams de una canción. El modelo de regresión lineal puede usarse como modelo predictivo, nos explica el 67% de los casos.
       + *Coeficiente de Pearson* (0.7833): Existe una fuerte correlación positiva entre el número de streams y la cantidad de veces que una canción aparece en playlists. 
       + *Regresión lineal simple*: Relación fuerte entre el número de "Total playlist" y "Streams". Un R² de aproximadamente 0.670 indica que el 67% de la variabilidaden "Streams" puede explicarse por "Total playlist".
 ![Hipótesis 3](/images/Diapositiva3.PNG)
-  + H4: Los artistas con un mayor número de canciones en Spotify tienen más streams.
+  + **H4**: Los artistas con un mayor número de canciones en Spotify tienen más streams.
     + **Conclusión**: A medida que el número de canciones de un artista aumenta, el total de streams también tiende a aumentar . Sin embargo, el modelo de regresión lineal no es adecuado para predecir el total de streams basándose en el total de canciones, puesto que existen muchos casos de canciones únicas con alta cantidad de streams.
       + *Coeficiente de Pearson*(-0.0536): Existe una correlación positiva fuerte entre el total de streams y el total de canciones.
       + *Regresión lineal simple*: El modelo no es adecuado para predecir "Total streams" basándose en "Total canciones". Coeficiente de determinación R² (-0.0536)
 ![Hipótesis 4](/images/Diapositiva4.PNG)
-  + H5: Las características de la música influyen en el éxito en términos de cantidad de streams en Spotify. Aplicable en “Danceability y Speechiness”
+  + **H5**: Las características de la música influyen en el éxito en términos de cantidad de streams en Spotify. Aplicable en “Danceability y Speechiness”
     + **Conclusión**: La bailabilidad y número de elementos hablados en una canción tiene muy poco en la popularidad medida por streams. A valores bajos de estas características, ligeramente hay más streams.
       + *Coeficiente de Pearson* (Danceability -0.1055; Speechiness -0.1128): Hay una correlación negativa débil entre el número de streams, la bailabilidad y el número de elementos hablados en una canción.
       + *Test Mann-Whitney U - Valor P* (Danceability 0.0554; Speechiness 0.0092) : Existe una diferencia significativa entre las categorías 'alto' y 'bajo‘.
       + *Regresión lineal simple*: Relación muy débil, modelo inadecuado.
 ![Hipótesis 5](/images/Diapositiva5.PNG)
-  + H6: Las canciones con más apariciones en playlist de Spotify tienen un comportamiento similar en otras plataformas como Deezer o Apple.
+  + **H6 (Extra)**: Las canciones con más apariciones en playlist de Spotify tienen un comportamiento similar en otras plataformas como Deezer o Apple.
     + **Conclusión**: Las canciones que son populares en las playlists de una plataforma tienden a ser populares en las playlists de la otra. El modelo de regresión lineal tiene una buena capacidad explicativa, del 72% al 67% de los casos.
     + *Coeficiente de Pearson* (0.8265): Existe una fuerte correlación positiva entre la cantidad de veces que una canción aparece en playlists de Spotify y Deezer.
     + *Regresión lineal simple*: Relación fuerte y significativa entre el número de veces que una canción aparece en playlists de Deezer y Spotify. Un R² de 0.7284 indica que el 72.84% de la variabilidad en "In Spotify Playlist" puede explicarse por "In Deezer Playlist“, mientras que un R² de 0.6758 indica que el 67.58% de la variabilidad en "In Spotify Playlist" puede explicarse por "In Apple Playlist“. 

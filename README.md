@@ -3,6 +3,8 @@
 # Laboratoria
 Este proyecto tiene como objetivo confirmar o refutar hipótesis para identificar los factores que pueden llevar al éxito a un artista o a una canción. Mediante el análisis de datos y el uso de pruebas estadísticas, se pretende comprender las variables que influyen en el desempeño en plataformas de streaming y otros indicadores de popularidad musical.
 
+![Diagrama del proyecto](main/caratula_spotify.jpeg)
+
 # Temas
 
 - [Introducción](#introducción)
@@ -126,6 +128,6 @@ Como pasos a seguir se sugieren los siguientes análisis:
 + Medir el impacto de colaboraciones (feat.) en el éxito de canciones y artistas. 
 
 ## Enlaces
-### Presentación 
-### Dashboard
-### Video Loom
+### [Presentación](https://drive.google.com/file/d/1E_k514FKv_UPGcI7mYX1VyMI5XJDF48j/view?usp=sharing)
+### [Dashboard](https://drive.google.com/file/d/10Xgsw3iV5z_9617aBMpS1iasr12VRz4k/view?usp=sharing)
+### [Video Loom](https://www.loom.com/share/c0a2aa6a67694dd686945d81a6c7ec0d?sid=a0dade66-db6b-41d8-bc8f-0af9896b59df)

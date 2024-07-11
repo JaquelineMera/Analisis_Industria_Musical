@@ -43,21 +43,22 @@ El flujo de trabajo incluyó varias etapas, el procesamiento de los datos, el an
 
 ## Procesamiento de los datos
 El procesamiento de los datos, se llevó a cabo en BigQuery a partir de comandos SQL, se siguieron los siguientes pasos:
-+ Identificar valores nulos a través COUNT, WHERE y IS NULL.
-+ Identificar duplicados a través de comandos SQL COUNT, GROUP BY, HAVING.
-Manejar variables que no son útiles para el análisis a través de comandos SQL SELECT EXCEPT.
-Identificar datos discrepantes en variables categóricas utilizando comandos de manejo de string, como REGEXP.
-Identificar datos discrepantes en variables numéricas utilizando comandos como MAX, MIN y AVG.
-Comprobar y modificar tipos de datos, cuando es necesario, utilizando CAST.
-Crear nuevas variables utilizando CONCAT y SUM.
-Construir tablas auxiliares utilizando WITH.
-Unir las tablas utilizando LEFT JOIN.
-+ 
-+ 
-+
++ Identificar valores nulos a través COUNTIF e IS NULL.
++ Identificar duplicados a través de COUNT, GROUP BY, HAVING.
++ Manejar variables que no son útiles en el análisis a través de EXCEPT.
++ Identificar datos discrepantes en variables categóricas con REGEXP_REPLACE.
++ Identificar datos discrepantes en variables numéricas con MAX, MIN y AVG.
++ Comprobar y modificar tipos de datos con SAFE_CAST y CAST.
++ Crear nuevas variables utilizando CONCAT, SUM y DATE. 
++ Construir tablas auxiliares utilizando WITH.
++ Unir las tablas utilizando LEFT JOIN.
 
 ## Análisis exploratorio
-
++ Agrupar datos según variables categóricas a través de tablas
++ Visualizar las variables categóricas a través de gráficos de barras y líneas 
++ Aplicar medidas de tendencia central en BPM, Playlists y Streams
++ Aplicar medidas de dispersión BPM, Playlists y Streams
++ Visualizar distribución a través de Hitogramas
 ## Validación de hipótesis
 Se plantearon las siguientes hipótesis...
 

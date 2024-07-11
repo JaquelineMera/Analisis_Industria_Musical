@@ -83,6 +83,7 @@ La validación de hipótesis se llevó a cabo en BigQuery y Google Colab
       + *Coeficiente de Pearson* (-0.0023): Hay una correlación negativa extremadamente débil (casi nula).
       + *Test Mann-Whitney U - Valor P* (0.4395): No hay una diferencia significativa entre las categorías 'alto' y 'bajo‘.
       + *Regresión lineal simple*: Modelo Inadecuado, no hay una relación lineal significativa entre BPM y Streams; Coeficiente de determinación R² (-0.0013).
+![Hipótesis 1](images/Diapositiva1.png)
   + H2: Las canciones más populares en el ranking de Spotify también tienen un comportamiento similar en otras plataformas como Deezer.
     + **Conclusión**: Las canciones que son populares en los ranking de Spotify también tienden a ser populares en otras plataformas como Deezer, Apple y Shazam. Sin embargo, el modelo de regresión lineal no puede usarse como modelo predictivo pues solo explica el 30% de esta variabilidad en Deezer y el 14% en Apple y Shazam.
       +  *Coeficiente de Pearson* (Dezzer 0.6051; Apple 0.5518; Shazam 0.6056): Existe una correlación positiva moderada entre el ranking de las canciones en Spotify y otras plataformas.

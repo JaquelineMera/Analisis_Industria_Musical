@@ -32,7 +32,7 @@ La discográfica ha formulado una serie de hipótesis para entender qué hace qu
 
 La tarea de este proyecto es validar estas hipótesis mediante el análisis de datos y proporcionar recomendaciones estratégicas basadas en los hallazgos, con el objetivo final de aumentar las posibilidades de éxito del nuevo artista.
 ## Equipo
-Jaqueline Mera y Ximena Castillo
+Jaqueline Mera y Frida Castillo
 ## Herramientas
 + BigQuery 
 + Google Colab 

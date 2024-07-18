@@ -3,7 +3,7 @@ Este proyecto tiene como objetivo confirmar o refutar hipótesis para identifica
 
 ![Caratula](caratula.jpeg)
 
-# Temas
+# 📊Temas 
 
 - [Introducción](#introducción)
 - [Equipo](#equipo)
@@ -32,7 +32,9 @@ La discográfica ha formulado una serie de hipótesis para entender qué hace qu
 
 La tarea de este proyecto es validar estas hipótesis mediante el análisis de datos y proporcionar recomendaciones estratégicas basadas en los hallazgos, con el objetivo final de aumentar las posibilidades de éxito del nuevo artista.
 ## Equipo
-Jaqueline Mera y Frida Castillo
+- [Jaqueline Mera](https://github.com/JaquelineMera)
+- [Frida Castillo](https://github.com/Fri21)
+
 ## Herramientas
 + BigQuery 
 + Google Colab 
